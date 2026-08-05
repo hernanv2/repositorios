@@ -74,12 +74,21 @@ a{ color:inherit; }
   white-space:nowrap;
 }
 
-.topbar__stats{ margin-inline:auto; }
+.topbar__stats{ margin-inline:auto; display:flex; align-items:center; gap:14px; }
 .stat{
   font-family:var(--font-mono); font-size:12px; letter-spacing:.06em;
   color:var(--muted); text-transform:uppercase;
 }
 .stat b{ color:var(--orange); font-size:15px; }
+
+.mode{
+  font-family:var(--font-mono); font-size:11px; letter-spacing:.08em;
+  text-transform:uppercase; padding:4px 10px; border-radius:999px;
+  border:1px solid var(--line); white-space:nowrap;
+}
+.mode--cloud{ color:var(--green); border-color:rgba(63,160,106,.4); background:rgba(63,160,106,.08); }
+.mode--local{ color:var(--orange); border-color:rgba(232,149,46,.4); background:rgba(232,149,46,.08); }
+.mode--loading{ color:var(--muted-2); }
 
 .topbar__actions{ display:flex; align-items:center; gap:10px; flex-wrap:wrap; }
 
